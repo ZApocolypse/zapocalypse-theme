@@ -1,7 +1,7 @@
 # The Zombie theme
 ## This is a fork of the midnight theme for my website: https://zapocolypse.github.io/
 
-[![.github/workflows/ci.yaml](https://github.com/ZApocolypse/zapocalypse-theme/actions/workflows/ci.yaml/badge.svg)](https://github.com/ZApocolypse/zapocalypse-theme/actions/workflows/ci.yaml) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-midnight.svg)](https://badge.fury.io/rb/jekyll-theme-midnight)
+[![.github/workflows/ci.yaml](https://github.com/ZApocolypse/zapocalypse-theme/actions/workflows/ci.yaml/badge.svg)](https://github.com/ZApocolypse/zapocalypse-theme/actions/workflows/ci.yaml) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-zapocalypse.svg)](https://badge.fury.io/rb/jekyll-theme-zapocalypse)
 
 *Midnight is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](https://zapocolypse.github.io/zapocalypse-theme), or even [use it today](#usage).*
 
