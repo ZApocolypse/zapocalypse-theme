@@ -3,4 +3,4 @@
 source "https://rubygems.org"
 
 gemspec
-gem "jekyll-theme-zapocalypse"
+gem "jekyll-theme-zapocalypse", path: "."
