@@ -1,5 +1,5 @@
 # The Zombie theme
-## This is a fork of the midnigh theme for my website: https://zapocolypse.github.io/
+## This is a fork of the midnight theme for my website: https://zapocolypse.github.io/
 
 [![.github/workflows/ci.yaml](https://github.com/ZApocolypse/zapocalypse-theme/actions/workflows/ci.yaml/badge.svg)](https://github.com/ZApocolypse/zapocalypse-theme/actions/workflows/ci.yaml) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-zapocalypse.svg)](https://badge.fury.io/rb/jekyll-theme-zapocalypse)
 
