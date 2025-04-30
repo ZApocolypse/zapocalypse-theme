@@ -19,4 +19,4 @@ jobs:
           gem build github-pages.gemspec
       - name: Publish
         run: |
-          gem push github-pages.gem --key ${{ secrets.PAGES_GEM_PUBLISH }}
+          gem push jekyll-theme-zapocalypse.gem --key ${{ secrets.PAGES_GEM_PUBLISH }}
