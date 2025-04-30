@@ -3,6 +3,7 @@ name: Publish Gem
 on:
   release:
     types: [released]
+  workflow-dispatch:
 
 jobs:
   release:
@@ -18,5 +19,4 @@ jobs:
         run: |
           gem build github-pages.gemspec
       - name: Publish
-        run: gem push jekyll-theme-zapocalypse.gem
-          # gem push jekyll-theme-zapocalypse.gem --key {{ secrets.PAGES_GEM_PUBLISH }} 
+        run: gem push jekyll-theme-zapocalypse.gem --key ${{ secrets.PAGES_GEM_PUBLISH }} 
