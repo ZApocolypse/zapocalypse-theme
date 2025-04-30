@@ -37,7 +37,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          publish_branch: master
-          publish_dir: .
+          publish_branch: gh-pages
+          publish_dir: ./_site
           enable_jekyll: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
