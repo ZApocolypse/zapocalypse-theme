@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |s|
-  s.name          = "jekyll-theme-midnight"
+  s.name          = "jekyll-theme-zapocalypse"
   s.version       = "0.2.0"
   s.license       = "CC0-1.0"
-  s.authors       = ["Matt Graham", "GitHub, Inc."]
-  s.email         = ["opensource+jekyll-theme-midnight@github.com"]
-  s.homepage      = "https://github.com/pages-themes/midnight"
+  s.authors       = ["Matt Graham", "GitHub, Inc.", "d2crashout"]
+  s.email         = ["opensource+jekyll-theme-zapocalypse@github.com"]
+  s.homepage      = "https://github.com/ZApocolypse/zapocalypse-theme/"
   s.summary       = "Midnight is a Jekyll theme for GitHub Pages"
 
   s.files         = `git ls-files -z`.split("\x0").select do |f|
