@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |s|
   s.name          = "jekyll-theme-zapocalypse"
-  s.version       = "0.2.0"
+  s.version       = "0.1.0"
   s.license       = "CC0-1.0"
   s.authors       = ["Matt Graham", "GitHub, Inc.", "d2crashout"]
-  s.email         = ["opensource+jekyll-theme-zapocalypse@github.com"]
+  s.email         = ["methebestestofall@gmail.com"]
   s.homepage      = "https://github.com/ZApocolypse/zapocalypse-theme/"
-  s.summary       = "Midnight is a Jekyll theme for GitHub Pages"
+  s.summary       = "Zapocalypse is a fork of Midnight, a Jekyll theme for GitHub Pages"
 
   s.files         = `git ls-files -z`.split("\x0").select do |f|
     f.match(%r{^((_includes|_layouts|_sass|assets)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
