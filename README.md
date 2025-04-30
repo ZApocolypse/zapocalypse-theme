@@ -14,7 +14,7 @@ To use the zapocalypse theme:
 1. Add the following to your site's `_config.yml`:
 
     ```yml
-    remote_theme: pages-themes/zapocalypse@v0.2.0
+    remote_theme: ZApocolypse/zapocalypse@v0.2.0
     plugins:
     - jekyll-remote-theme # add this line to the plugins list if you already have one
     ```
@@ -64,8 +64,8 @@ If you'd like to add your own custom styles:
 
 If you'd like to change the theme's HTML layout:
 
-1. For some changes such as a custom `favicon`, you can add custom files in your local `_includes` folder. The files [provided with the theme](https://github.com/pages-themes/zapocalypse-theme/tree/master/_includes) provide a starting point and are included by the [original layout template](https://github.com/pages-themes/zapocalypse-theme/blob/master/_layouts/default.html).
-2. For more extensive changes, [copy the original template](https://github.com/pages-themes/zapocalypse-theme/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
+1. For some changes such as a custom `favicon`, you can add custom files in your local `_includes` folder. The files [provided with the theme](https://github.com/ZApocolypse/zapocalypse-theme/tree/master/_includes) provide a starting point and are included by the [original layout template](https://github.com/ZApocolypse/zapocalypse-theme/blob/master/_layouts/default.html).
+2. For more extensive changes, [copy the original template](https://github.com/ZApocolypse/zapocalypse-theme/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
 3. Create a file called `/_layouts/default.html` in your site
 4. Paste the default layout content copied in the first step
 5. Customize the layout as you'd like
@@ -78,7 +78,7 @@ Google has released several iterations to their Google Analytics code over the y
 
 Templates often rely on URLs supplied by GitHub such as links to your repository or links to download your project. If you'd like to override one or more default URLs:
 
-1. Look at [the template source](https://github.com/pages-themes/zapocalypse-theme/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
+1. Look at [the template source](https://github.com/ZApocolypse/zapocalypse-theme/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
 2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
     ```yml
     github:
@@ -93,7 +93,7 @@ For more information, see [the Jekyll variables documentation](https://jekyllrb.
 
 ## Roadmap
 
-See the [open issues](https://github.com/pages-themes/zapocalypse-theme/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/ZApocolypse/zapocalypse-theme/issues) for a list of proposed features (and known issues).
 
 ## Project philosophy
 
@@ -107,7 +107,7 @@ Interested in contributing to zapocalypse? We'd love your help. zapocalypse is a
 
 If you'd like to preview the theme locally (for example, in the process of proposing a change):
 
-1. Clone down the theme's repository (`git clone https://github.com/pages-themes/zapocalypse`)
+1. Clone down the theme's repository (`git clone https://github.com/ZApocolypse/zapocalypse`)
 2. `cd` into the theme's directory
 3. Run `script/bootstrap` to install the necessary dependencies
 4. Run `bundle exec jekyll serve` to start the preview server
