@@ -17,6 +17,6 @@ jobs:
           ruby-version: '3.2'
       - name: Build gem
         run: |
-          gem build github-pages.gemspec
+          gem build jekyll-theme-zapocalypse.gemspec
       - name: Publish
         run: gem push jekyll-theme-zapocalypse.gem --key ${{ secrets.PAGES_GEM_PUBLISH }} 
