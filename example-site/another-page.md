@@ -11,4 +11,5 @@ _yay_
 _:)_
 
 [back](..)
-[another page](./page-another)
+
+[another page](../page-another)
