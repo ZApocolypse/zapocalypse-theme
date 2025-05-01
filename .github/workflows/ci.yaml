@@ -1,14 +1,16 @@
 name: Test Theme
+
 on:
   push:
   pull_request:
     types: [opened, synchronize]
+    
 jobs:
   build:
     runs-on: ubuntu-latest
     name: script/cibuild
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.2
@@ -25,3 +27,21 @@ jobs:
           script/bootstrap
       - name: test
         run: script/cibuild
+
+  validate_html:
+    name: W3C Validate HTML
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/gh-pages'  # Only run on gh-pages branch
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2
+      
+      - name: Install dependencies
+        run: bundle install
+      
+      - name: Run validate-html
+        run: bundle exec script/validate-html

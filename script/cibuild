@@ -15,13 +15,5 @@ bundle exec htmlproofer ./_site \
 echo "🔎 Running RuboCop..."
 bundle exec rubocop -D --config .rubocop.yml
 
-echo "✅ Checking for _site/index.html for W3C validation..."
-if [ -f "_site/index.html" ]; then
-  echo "📄 index.html found, validating with W3C validator..."
-  bundle exec ruby script/validate-html
-else
-  echo "⚠️  Skipping validate-html: _site/index.html not found (probably not on gh-pages)"
-fi
-
 echo "📦 Building gem..."
 gem build jekyll-theme-zapocalypse.gemspec
