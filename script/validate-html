@@ -25,9 +25,9 @@ def validate(file)
   exit 1
 end
 
-if File.exist?("_site/index.html")
-  validate("_site/index.html")
+if File.exist?("example-site/index.html")
+  validate("example-site/index.html")
 else
-  puts "Skipping HTML validation: _site/index.html does not exist."
+  puts "Skipping HTML validation: example-site/index.html does not exist."
 end
 validate File.join "assets", "css", "style.css"

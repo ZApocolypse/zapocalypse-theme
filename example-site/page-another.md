@@ -7,8 +7,12 @@ permalink: page-another/
 ## Welcome to ANOTHER another page
 
 _yay_
+
 _:)_
+
 _XD_
+
+
 
 [back](..)
 [another page](../another-page)
