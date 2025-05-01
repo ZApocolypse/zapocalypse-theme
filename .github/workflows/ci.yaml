@@ -39,7 +39,7 @@ jobs:
     - name: Check if example-site/ changed
       id: changes
       run: |
-        if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^example-site/'; then
+        if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^example-site/' > /dev/null; then
           echo "changed=true" >> $GITHUB_OUTPUT
         else
           echo "changed=false" >> $GITHUB_OUTPUT
