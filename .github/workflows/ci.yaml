@@ -21,7 +21,7 @@ jobs:
             cd ..
       - name: build
         run: |
-          ls /home/runner/work/zapocalypse-theme/zapocalypse-theme/_site
+          ls /home/runner/work/zapocalypse-theme/zapocalypse-theme
           script/bootstrap
       - name: test
         run: script/cibuild
