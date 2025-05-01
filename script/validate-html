@@ -6,10 +6,10 @@ require "w3c_validators"
 
 def validator(file)
   extension = File.extname(file)
-  if extension == ".html"
+  if extension == ".md"
     W3CValidators::NuValidator.new
-  elsif extension == ".css"
-    W3CValidators::CSSValidator.new
+  elsif extension == ".scss"
+    W3CValidators::scssValidator.new
   end
 end
 
@@ -25,9 +25,9 @@ def validate(file)
   exit 1
 end
 
-if File.exist?("example-site/index.html")
-  validate("example-site/index.html")
+if File.exist?("example-site/index.md")
+  validate("example-site/index.md")
 else
-  puts "Skipping HTML validation: example-site/index.html does not exist."
+  puts "Skipping HTML validation: example-site/index.md does not exist."
 end
-validate File.join "assets", "css", "style.css"
+validate File.join "assets", "scss", "style.scss"
