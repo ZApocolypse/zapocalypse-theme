@@ -3,5 +3,5 @@
 source "https://rubygems.org"
 
 gem "jekyll"
-gem "zapocalypse-theme", path: ".."
+gem "jekyll-theme-zapocalypse", path: ".."
 
