@@ -30,7 +30,9 @@ jobs:
           bundle install
 
       - name: Build the site
-        run: bundle exec jekyll build --source example-site --destination _site
+        run: |
+          bundle exec jekyll build --source example-site --destination _site
+          touch _site/.nojekyll  # ensures _site has a file and avoids glob failure
 
       - name: Check directory
         run: ls /home/runner/work/zapocalypse-theme/zapocalypse-theme/
@@ -41,3 +43,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           publish_branch: gh-pages
+          disable_nojekyll: true
