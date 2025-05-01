@@ -32,6 +32,9 @@ jobs:
       - name: Build the site
         run: bundle exec jekyll build --source example-site --destination _site
 
+      - name: Check directory
+        run: ls /home/runner/work/zapocalypse-theme/zapocalypse-theme/
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
