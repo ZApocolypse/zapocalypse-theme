@@ -13,6 +13,12 @@ jobs:
         with:
           ruby-version: 3.2
           bundler-cache: true
+
+      - name: Install dependencies
+        run: |
+            cd /home/runner/work/zapocalypse-theme/zapocalypse-theme/example-site
+            bundle install
+            cd ..
       - name: build
         run: script/bootstrap
       - name: test

@@ -3,3 +3,8 @@
 source "https://rubygems.org"
 
 gemspec
+
+gem "jekyll", "~> 4.3"
+gem "jekyll-theme-zapocalypse", path: ".."
+gem "jekyll-seo-tag"
+gem "html-proofer"
