@@ -16,6 +16,6 @@ _:(_
 
 _:0_
 
-[back](/.)
+[back](/index.html)
 
 [another page](../another-page)
