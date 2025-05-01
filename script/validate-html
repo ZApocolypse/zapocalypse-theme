@@ -24,8 +24,8 @@ def validate(file)
   exit 1
 end
 
-if File.exist?('_site/index.html')
-  validate('_site/index.html')
+if File.exist?("_site/index.html")
+  validate("_site/index.html")
 else
   puts "Skipping HTML validation: _site/index.html does not exist."
 end
