@@ -34,7 +34,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        ref: gh-pages
+        ref: master
         fetch-depth: 0
 
     - name: Check if example-site/ changed
@@ -56,6 +56,11 @@ jobs:
     - name: Install dependencies
       if: steps.changes.outputs.changed == 'true'
       run: bundle install
+
+    - uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+        fetch-depth: 0
       
     - name: Run validate-html
       if: steps.changes.outputs.changed == 'true'

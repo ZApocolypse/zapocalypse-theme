@@ -8,5 +8,7 @@ permalink: another-page/
 
 _yay_
 
+_:)_
+
 [back](..)
 [another page](./page-another)
