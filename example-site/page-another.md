@@ -10,5 +10,5 @@ _yay_
 _:)_
 _XD_
 
-[back](./)
-[back](./page-another)
+[back](..)
+[another page](../another-page)
