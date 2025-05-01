@@ -31,7 +31,6 @@ jobs:
   validate_html:
     name: W3C Validate HTML
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/gh-pages'  # Only run on gh-pages branch
     steps:
     - name: Check if _site/ changed
       id: changes
