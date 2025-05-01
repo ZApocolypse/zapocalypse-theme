@@ -20,6 +20,8 @@ jobs:
             bundle install
             cd ..
       - name: build
-        run: script/bootstrap
+        run: |
+          ls /home/runner/work/zapocalypse-theme/zapocalypse-theme/_site
+          script/bootstrap
       - name: test
         run: script/cibuild
