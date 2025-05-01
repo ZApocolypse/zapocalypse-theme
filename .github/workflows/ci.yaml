@@ -33,15 +33,27 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/gh-pages'  # Only run on gh-pages branch
     steps:
-      - uses: actions/checkout@v4
+    - name: Check if _site/ changed
+      id: changes
+      run: |
+        if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^_site/'; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+        fi
+
+    - uses: actions/checkout@v4
       
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.2
+    - name: Set up Ruby
+      if: steps.changes.outputs.changed == 'true'
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.2
       
-      - name: Install dependencies
-        run: bundle install
+    - name: Install dependencies
+      if: steps.changes.outputs.changed == 'true'
+      run: bundle install
       
-      - name: Run validate-html
-        run: bundle exec script/validate-html
+    - name: Run validate-html
+      if: steps.changes.outputs.changed == 'true'
+      run: bundle exec script/validate-html
