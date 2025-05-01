@@ -10,6 +10,6 @@ _yay_
 
 _:)_
 
-[back](..)
+[back](/.)
 
 [another page](../page-another)
